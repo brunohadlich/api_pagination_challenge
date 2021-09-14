@@ -2,13 +2,13 @@
 
 The application will run at port 8000.
 
-To run locally first install the dependencies:
-	1. npm install
-	2. npm run dev
+## To run locally first install the dependencies:</br>
+1. npm install
+2. npm run dev
 
-To run the tests use:
-	1. npm run test
+## To run the tests use:
+* npm run test
 
-To build the application with docker run:
-	1. make docker_build
-	2. make docker_run
+## To build the application with docker run:
+1. make docker_build
+2. make docker_run
