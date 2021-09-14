@@ -1,3 +1,5 @@
+const { v4: uuidv4 } = require('uuid');
+
 function getArray(currPage, amountPages) {
 	let result = [];
 	if (amountPages <= 5) {
@@ -69,7 +71,7 @@ function pagination(req, res, next) {
 			message: error
 		});
 	} else {
-		res.json(getArray(currPage, amountPages));
+		res.json([{id: uuidv4(), paginacao: getArray(currPage, amountPages)}]);
 	}
 }
 
